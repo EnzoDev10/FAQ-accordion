@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "WorkSans";
+  src: url("assets/fonts/WorkSans-VariableFont_wght.woff2") format("woff2");
+}
+@font-face {
+  font-family: "WorkSans Italic";
+  src: url("assets/fonts/WorkSans-Italic-VariableFont_wght.woff2") format("woff2");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "WorkSans";
+}
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(275, 100%, 97%);
+}
+.top-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+}
+.card {
+  width: 90%;
+  padding: 20px;
+  border: 1px solid #111;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
