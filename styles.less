@@ -21,6 +21,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "WorkSans";
+  color: @Dark-purple;
 }
 
 body {
@@ -30,27 +31,69 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: @Light-pink
+  background-color: @Light-pink;
 }
 
 .top-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
 }
 
 .card {
   width: 90%;
-  padding: 20px;
-  border: 1px solid #111;
+  padding: 25px;
   border-radius: 10px;
   background-color: @White;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  #faq-title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+    #star-icon {
+      width: 2em;
+      height: 2em;
+    }
+
+    .heading {
+      font-size: 2.5em;
+      margin-left: 30px;
+    }
+  }
+
+  .question {
+    padding: 20px 0;
+    font-size: 19px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .quest-icon {
+      width: 35px;
+      height: 35px;
+      margin-left: 20px;
+    }
+
+  }
+  .answer {
+    display: none;
+  }
 }
 
+
 .attribution {
-  font-size: 11px;
+    width: 90%;
+  position: relative;
+  top: 40px;
+  font-size: 0.9em;
   text-align: center;
 }
 .attribution a {
