@@ -1,5 +1,11 @@
 // * onclick function that takes as an argument the number of the question
 // * and based on the number makes visible the corresponding answer and changes his icon
+
+// TODO: Improve function that displays the answers
+// TODO: Add focus state so users can select questions with the keyboard
+// TODO: Add hover state for the questions so it looks better
+// TODO: Finish README
+
 function showAnswer(Num) {
   let answer;
   switch (Num) {

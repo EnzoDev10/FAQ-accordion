@@ -1,3 +1,7 @@
+// TODO: Make borders for each question.
+// TODO: Make more semantic the questions.
+// TODO: Add animations for the answers.
+
 @font-face {
   font-family: "WorkSans";
   src: url("assets/fonts/WorkSans-VariableFont_wght.woff2") format("woff2");
@@ -50,6 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 5px;
 
   #faq-title {
     display: flex;
@@ -69,13 +74,15 @@ body {
 
   .question {
     cursor: pointer;
+    border-bottom: 1px @Light-pink solid;
+    border-radius: 5px;
 
     div {
       display: flex;
       align-items: center;
-      justify-content: space-between;    
-      font-size: 19px;    
+      justify-content: space-between;
       font-weight: 700;
+      font-size: 19px;
       padding: 30px 0;
 
       .quest-icon {
@@ -83,26 +90,31 @@ body {
         height: 35px;
         margin-left: 20px;
       }
-
-      .quest-icon.active {
-        background: url(assets/images/icon-minus.svg);
-        width: 35px;
-        height: 35px;
-      }
     }
-
   }
   .answer {
     font-weight: 400;
     display: none;
     color: @Grayish-purple;
+    position: relative;
+    animation-name: answerAnimation;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
   }
 
+  @keyframes answerAnimation {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
-
-.attribution {
-    width: 90%;
+/* .attribution {
+  width: 90%;
   position: relative;
   top: 40px;
   font-size: 0.9em;
@@ -110,4 +122,4 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */
