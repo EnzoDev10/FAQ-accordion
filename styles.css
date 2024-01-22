@@ -45,34 +45,33 @@ body {
   align-items: center;
 }
 .card #faq-title #star-icon {
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
 }
 .card #faq-title .heading {
-  font-size: 2.5em;
-  margin-left: 30px;
+  font-size: 2em;
+  margin-left: 20px;
 }
 .card .question {
   cursor: pointer;
-  border-bottom: 1px hsl(275, 100%, 97%) solid;
-  border-radius: 5px;
+  box-shadow: 0 2px 5px hsl(275, 100%, 97%);
 }
-.card .question div {
+.card .question summary {
+  list-style: none;
+  width: 100%;
+  padding: 30px 0;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-weight: 700;
-  font-size: 19px;
-  padding: 30px 0;
 }
-.card .question div .quest-icon {
-  width: 35px;
-  height: 35px;
+.card .question .quest-icon {
+  width: 30px;
+  height: 30px;
   margin-left: 20px;
 }
-.card .answer {
-  font-weight: 400;
-  display: none;
+.answer {
+  font-weight: 300;
   color: hsl(292, 16%, 49%);
   position: relative;
   animation-name: answerAnimation;

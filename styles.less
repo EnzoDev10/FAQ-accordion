@@ -61,40 +61,41 @@ body {
     text-align: center;
     align-items: center;
 
+
     #star-icon {
-      width: 2em;
-      height: 2em;
+      width: 1.5em;
+      height: 1.5em;
     }
 
     .heading {
-      font-size: 2.5em;
-      margin-left: 30px;
+      font-size: 2em;
+      margin-left: 20px;
     }
   }
 
   .question {
     cursor: pointer;
-    border-bottom: 1px @Light-pink solid;
-    border-radius: 5px;
-
-    div {
+    box-shadow: 0 2px 5px @Light-pink;
+    
+    summary {
+      list-style: none;
+      width: 100%;
+      padding: 30px 0;
+      font-weight: 700;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-weight: 700;
-      font-size: 19px;
-      padding: 30px 0;
+    }
 
       .quest-icon {
-        width: 35px;
-        height: 35px;
-        margin-left: 20px;
+        width: 30px;
+        height: 30px;
+        margin-left:20px;
       }
     }
   }
   .answer {
-    font-weight: 400;
-    display: none;
+    font-weight: 300;
     color: @Grayish-purple;
     position: relative;
     animation-name: answerAnimation;
@@ -111,7 +112,7 @@ body {
       opacity: 1;
     }
   }
-}
+
 
 /* .attribution {
   width: 90%;
