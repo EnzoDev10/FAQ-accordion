@@ -61,7 +61,6 @@ body {
     text-align: center;
     align-items: center;
 
-
     #star-icon {
       width: 1.5em;
       height: 1.5em;
@@ -76,7 +75,8 @@ body {
   .question {
     cursor: pointer;
     box-shadow: 0 2px 5px @Light-pink;
-    
+    border-radius: 5px;
+
     summary {
       list-style: none;
       width: 100%;
@@ -87,32 +87,38 @@ body {
       justify-content: space-between;
     }
 
-      .quest-icon {
-        width: 30px;
-        height: 30px;
-        margin-left:20px;
-      }
-    }
-  }
-  .answer {
-    font-weight: 300;
-    color: @Grayish-purple;
-    position: relative;
-    animation-name: answerAnimation;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes answerAnimation {
-    0% {
-      opacity: 0;
+    .quest-icon {
+      width: 30px;
+      height: 30px;
+      margin-left: 20px;
     }
 
-    100% {
-      opacity: 1;
-    }
   }
 
+}
+.answer {
+  font-weight: 300;
+  color: @Grayish-purple;
+  position: relative;
+
+  padding-bottom: 20px;
+}
+
+.answer.active {
+  animation-name: answerAnimation;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes answerAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 /* .attribution {
   width: 90%;
