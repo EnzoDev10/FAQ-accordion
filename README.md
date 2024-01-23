@@ -12,6 +12,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [Resources](#resources)
 - [Author](#author)
 
 
@@ -54,6 +55,13 @@ With this project i learned how to use JQuery and Less. I already had experience
 ### Continued development
 
 In future projects i would like to learn more JavaScript because i noticed that i got stuck multiple times on simple problems and i think is time to get even deeper in this language.
+
+## resources
+- [Article about using event listener with classes](https://bobbyhadz.com/blog/javascript-add-event-listener-to-all-elements-with-class)
+
+- [Article on the box-shadow property](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
+
+- []()
 
 ## Author
 
